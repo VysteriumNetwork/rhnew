@@ -23,7 +23,7 @@ module.exports = {
         try {
             origin = new URL(origin_proxy);
         } catch (error) {
-            origin = new URL(`${req.socket.encrypted ? 'https:' : 'http:'}//${req.headers.host}`);
+            origin = new URL(`${req.socket.encrypted ? 'https:' : 'https:'}//${req.headers.host}`);
         }
 
         const { hostname, port, protocol } = origin;
